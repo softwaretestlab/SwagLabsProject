@@ -1,6 +1,9 @@
-JupiterSiteTestCases\FF05_VeirfyCartCheckout.class
-JupiterSiteTestCases\AT03.class
-JupiterSiteTestCases\FF06_VeirfyAddAllProductsNDelete.class
+StepDefinations\SD03_VerifyAddAllProductAndRemoveProduct.class
+SwagLabTestCases\AT01_VerifyCartCheckout.class
 common\AssertResponse.class
 common\ElementDisplayedOrNot.class
+SwagLabTestCases\AT02_VerifyAddAllProductsNDelete.class
+SwagLabTestCases\AT03_VerifyAddAllProductAndRemoveProduct.class
 StepDefinations\SD01_VerifyCartCheckout.class
+Runner\TestRunner.class
+StepDefinations\SD02_AT02_VerifyAddAllProductsNDelete.class

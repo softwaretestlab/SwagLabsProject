@@ -1,11 +1,9 @@
 C:\Users\softw\IdeaProjects\SwagLabsProject\src\test\java\common\ElementDisplayedOrNot.java
-C:\Users\softw\IdeaProjects\SwagLabsProject\src\test\java\JupiterSiteTestCases\FF05_VeirfyCartCheckout.java
-C:\Users\softw\IdeaProjects\SwagLabsProject\src\test\java\JupiterSiteTestCases\dummylearn.java
-C:\Users\softw\IdeaProjects\SwagLabsProject\src\test\java\JupiterSiteTestCases\FF06_VeirfyAddAllProductsNDelete.java
-C:\Users\softw\IdeaProjects\SwagLabsProject\src\test\java\JupiterSiteTestCases\AT01.java
-C:\Users\softw\IdeaProjects\SwagLabsProject\src\test\java\JupiterSiteTestCases\AT02.java
+C:\Users\softw\IdeaProjects\SwagLabsProject\src\test\java\Runner\TestRunner.java
+C:\Users\softw\IdeaProjects\SwagLabsProject\src\test\java\SwagLabTestCases\AT01_VerifyCartCheckout.java
+C:\Users\softw\IdeaProjects\SwagLabsProject\src\test\java\SwagLabTestCases\AT03_VerifyAddAllProductAndRemoveProduct.java
 C:\Users\softw\IdeaProjects\SwagLabsProject\src\test\java\common\AssertResponse.java
+C:\Users\softw\IdeaProjects\SwagLabsProject\src\test\java\StepDefinations\SD02_AT02_VerifyAddAllProductsNDelete.java
 C:\Users\softw\IdeaProjects\SwagLabsProject\src\test\java\StepDefinations\SD01_VerifyCartCheckout.java
-C:\Users\softw\IdeaProjects\SwagLabsProject\src\test\java\JupiterSiteTestCases\FF03_VeirfyProductSorting.java
-C:\Users\softw\IdeaProjects\SwagLabsProject\src\test\java\JupiterSiteTestCases\jaganTest.java
-C:\Users\softw\IdeaProjects\SwagLabsProject\src\test\java\JupiterSiteTestCases\AT03.java
+C:\Users\softw\IdeaProjects\SwagLabsProject\src\test\java\SwagLabTestCases\AT02_VerifyAddAllProductsNDelete.java
+C:\Users\softw\IdeaProjects\SwagLabsProject\src\test\java\StepDefinations\SD03_VerifyAddAllProductAndRemoveProduct.java

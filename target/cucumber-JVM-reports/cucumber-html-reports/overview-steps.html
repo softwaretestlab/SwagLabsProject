@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html>
+<head>
+  
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery.tablesorter.min.js"></script>
+<script type="text/javascript" src="js/Chart.min.js"></script>
+<script type="text/javascript" src="js/moment.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css"/>
+<link rel="stylesheet" href="css/cucumber.css" type="text/css"/>
+<link rel="stylesheet" href="css/font-awesome.min.css"/>
+<link rel="shortcut icon" href="images/favicon.png"/>
+
+<script type="text/javascript">
+$(document).ready(function() {
+    // this will tell tablesorter to try looking for the data-value attribute
+    // if present, it'll sort by that instead
+    // otherwise, it'll sort by the text content of the table cell
+    $("#tablesorter").tablesorter({
+        textAttribute: 'data-value',
+        // ignores the first row of the header, the 'scenario', 'steps', since
+        // sorting those doesn't make sense
+        selectorHeaders: '> thead tr:not(.dont-sort) th',
+        // use a stable sort
+        sortStable: true
+    });
+});
+</script>
+
+
+
+
+
+
+
+
+
+
+
+  
+<title>Cucumber Reports (no 1) - Steps Overview</title>
+
+</head>
+<body>
+
+<nav class="navbar navbar-default navbar-fixed-top" id="navigation">
+  <div class="container-fluid">
+    <div class="collapse navbar-collapse">
+      <p class="navbar-text navbar-left">Cucumber Report</p>
+      <ul class="nav navbar-nav navbar-right">
+                <li role="presentation" ><a href="overview-features.html">Features</a></li>
+        <li role="presentation" ><a href="overview-tags.html">Tags</a></li>
+        <li role="presentation"     class="active" ><a href="overview-steps.html">Steps</a></li>
+                <li role="presentation" ><a href="overview-failures.html">Failures</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+<div class="container-fluid">
+  <div class="col-md-5 col-md-offset-1">
+    
+<table class="table table-bordered" id="build-info">
+  <thead>
+    <tr>
+      <th>Project</th>
+              <th>Number</th>
+            <th>Date</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="info">
+      <td>SwagLabsProject</td>
+              <td>1</td>
+            <td>12 Feb 2024, 09:28</td>
+    </tr>
+  </tbody>
+</table>
+
+  </div>
+  <div class="col-md-3 col-md-offset-2">
+      </div>
+</div>
+
+
+<div id="report-lead" class="container-fluid">
+  <div class="col-md-10 col-md-offset-1">
+    <h2>Steps Statistics</h2>
+          <p>The following graph shows step statistics for this build. Below list is based on results.
+ step does not provide information about result then is not listed below.
+ Additionally @Before and @After are not counted because they are part of the scenarios, not steps.</p>
+      </div>
+</div>
+
+<div class="container-fluid" id="report">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+      <table id="tablesorter" class="stats-table table-hover">
+
+        <thead>
+          <tr class="header">
+            <th>Implementation</th>
+            <th>Occurrences</th>
+            <th>Average duration</th>
+            <th>Max duration</th>
+            <th>Total durations</th>
+            <th>Ratio</th>
+          </tr>
+        </thead>
+
+        <tbody>
+                      <tr>
+              <td class="location">StepDefinations.SD01_VerifyCartCheckout.click_on_cart_to_navigate_to_cart_page()</td>
+              <td>1</td>
+              <td class="duration" data-value="57811400">0.057</td>
+              <td class="duration" data-value="57811400">0.057</td>
+              <td class="duration" data-value="57811400">0.057</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">StepDefinations.SD01_VerifyCartCheckout.input_password()</td>
+              <td>3</td>
+              <td class="duration" data-value="122626100">0.122</td>
+              <td class="duration" data-value="122626100">0.126</td>
+              <td class="duration" data-value="367878300">0.367</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">StepDefinations.SD01_VerifyCartCheckout.input_username()</td>
+              <td>3</td>
+              <td class="duration" data-value="141376133">0.141</td>
+              <td class="duration" data-value="141376133">0.162</td>
+              <td class="duration" data-value="424128400">0.424</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">StepDefinations.SD01_VerifyCartCheckout.on_cart_page_capture_item_name_and_price_and_compare_with_product_page_item_name_and_price_and_both_should_match()</td>
+              <td>1</td>
+              <td class="duration" data-value="252722500">0.252</td>
+              <td class="duration" data-value="252722500">0.252</td>
+              <td class="duration" data-value="252722500">0.252</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">StepDefinations.SD01_VerifyCartCheckout.open_browser_and_navigate_to_page()</td>
+              <td>3</td>
+              <td class="duration" data-value="2756667566">2.756</td>
+              <td class="duration" data-value="2756667566">3.377</td>
+              <td class="duration" data-value="8270002700">8.270</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">StepDefinations.SD01_VerifyCartCheckout.submit_credentials()</td>
+              <td>3</td>
+              <td class="duration" data-value="117768966">0.117</td>
+              <td class="duration" data-value="117768966">0.120</td>
+              <td class="duration" data-value="353306900">0.353</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">StepDefinations.SD01_VerifyCartCheckout.user_on_product_page_and_here_capture_item_name_and_price_and_add_item_to_cart()</td>
+              <td>1</td>
+              <td class="duration" data-value="116142100">0.116</td>
+              <td class="duration" data-value="116142100">0.116</td>
+              <td class="duration" data-value="116142100">0.116</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">StepDefinations.SD01_VerifyCartCheckout.welcome_page_should_be_open()</td>
+              <td>3</td>
+              <td class="duration" data-value="54993266">0.054</td>
+              <td class="duration" data-value="54993266">0.059</td>
+              <td class="duration" data-value="164979800">0.164</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">StepDefinations.SD02_AT02_VerifyAddAllProductsNDelete.click_on_cart_to_navigate_to_the_cart_page()</td>
+              <td>1</td>
+              <td class="duration" data-value="68289400">0.068</td>
+              <td class="duration" data-value="68289400">0.068</td>
+              <td class="duration" data-value="68289400">0.068</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">StepDefinations.SD02_AT02_VerifyAddAllProductsNDelete.on_cart_page_remove_all_items_and_verify_all_items_removed()</td>
+              <td>1</td>
+              <td class="duration" data-value="30515416600">30.515</td>
+              <td class="duration" data-value="30515416600">30.515</td>
+              <td class="duration" data-value="30515416600">30.515</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">StepDefinations.SD02_AT02_VerifyAddAllProductsNDelete.user_on_product_page_and_here_add_all_items_to_cart()</td>
+              <td>1</td>
+              <td class="duration" data-value="201380900">0.201</td>
+              <td class="duration" data-value="201380900">0.201</td>
+              <td class="duration" data-value="201380900">0.201</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">StepDefinations.SD03_VerifyAddAllProductAndRemoveProduct.click_on_high_to_low_filter_and_verify_that_each_item_is_sorted_by_price_in_high_to_low_order()</td>
+              <td>1</td>
+              <td class="duration" data-value="418949700">0.418</td>
+              <td class="duration" data-value="418949700">0.418</td>
+              <td class="duration" data-value="418949700">0.418</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">StepDefinations.SD03_VerifyAddAllProductAndRemoveProduct.click_on_low_to_high_filter_and_verify_that_each_item_is_sorted_by_price_in_low_to_high_order()</td>
+              <td>1</td>
+              <td class="duration" data-value="182432300">0.182</td>
+              <td class="duration" data-value="182432300">0.182</td>
+              <td class="duration" data-value="182432300">0.182</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">StepDefinations.SD03_VerifyAddAllProductAndRemoveProduct.click_on_z_to_a_filter_and_verify_that_each_item_is_sorted_by_name_in_z_to_a_order()</td>
+              <td>1</td>
+              <td class="duration" data-value="154852600">0.154</td>
+              <td class="duration" data-value="154852600">0.154</td>
+              <td class="duration" data-value="154852600">0.154</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">StepDefinations.SD03_VerifyAddAllProductAndRemoveProduct.user_on_product_page_and_here_click_on_a_to_z_filter_and_verify_that_each_item_is_sorted_by_name_in_a_to_z_order()</td>
+              <td>1</td>
+              <td class="duration" data-value="151534800">0.151</td>
+              <td class="duration" data-value="151534800">0.151</td>
+              <td class="duration" data-value="151534800">0.151</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                  </tbody>
+
+        <tfoot class="total">
+          <tr>
+            <td>15</td>
+            <td>25</td>
+            <td class="duration">1.667</td>
+            <td class="duration">30.515</td>
+            <td class="duration">41.699</td>
+            <td>Totals</td>
+          </tr>
+        </tfoot>
+
+      </table>
+    </div>
+  </div>
+</div>
+
+
+<nav class="navbar navbar-default" id="footer">
+  <div class="container-fluid">
+    <p class="navbar-text navbar-right">
+        <small>generate Cucumber HTML reports via:&nbsp;</small>
+        <a class="navbar-link" href="https://github.com/jenkinsci/cucumber-reports-plugin">Jenkins Plugin</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-reporting">Standalone</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-sandwich">Sandwich</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/maven-cucumber-reporting">Maven</a>
+        &nbsp;&nbsp;
+    </p>
+  </div>
+</nav>
+
+</body>
+</html>
