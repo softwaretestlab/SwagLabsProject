@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Cucumber" time="52" tests="3" skipped="0" failures="0" errors="0">
+<testcase classname="Checkout function" name="Verify Cart Checkout" time="3.918">
+<system-out><![CDATA[
+Given user on product page and here capture item name and price and add item to cart.passed
+Then Click on Cart to navigate to cart page.................................passed
+Then On Cart page capture item name and price and compare with product page item name and price and both should match.passed
+]]></system-out>
+</testcase>
+<testcase classname="Add to cart functionality" name="Verify add all products and remove products" time="33.465">
+<system-out><![CDATA[
+Given user on product page and here add all items to cart...................passed
+And Click on Cart to navigate to the cart page..............................passed
+Then on Cart page remove all items and verify all items removed.............passed
+]]></system-out>
+</testcase>
+<testcase classname="Filter function" name="Verify Product Sorting" time="14.381">
+<system-out><![CDATA[
+Given user on product page and here click on AToZ filter and verify that each item is sorted by name in AToZ order.passed
+Then click on ZToA filter and verify that each item is sorted by name in AToZ order.passed
+Then click on LowToHigh filter and verify that each item is sorted by price in LowToHigh order.passed
+Then click on HighToLow filter and verify that each item is sorted by price in HighToLow order.passed
+]]></system-out>
+</testcase>
+</testsuite>

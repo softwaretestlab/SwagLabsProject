@@ -1,0 +1,6 @@
+pages\homePage.class
+PropertiesFile\ReadPropertiesFile.class
+BaseClass\openBrowser.class
+pages\cardPage.class
+pages\contactPage.class
+pages\shopPage.class
